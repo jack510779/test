@@ -1,6 +1,6 @@
-var map = L.map('map').setView([22.98152659492633, 120.22505780791008], 18);
+var map = L.map('map').setView([22.98152659492633, 120.22505780791008], 14);
 var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	maxZoom: 19,
+	maxZoom: 15,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
@@ -14,7 +14,7 @@ var street = {"type":"FeatureCollection", "features": [
 	]};
 	
 var s_light_style = {
-    radius: 8,
+    radius: 20,
     fillColor: "#ff7800",
     color: "#000",
     weight: 1,
